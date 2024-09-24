@@ -56,7 +56,6 @@ export default function Header() {
           </div>
           <button className={style.searchBtn}>
             <i className="fa-solid fa-magnifying-glass"></i>
-            <p>검색</p>
           </button>
         </div>
       </div>
