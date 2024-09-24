@@ -1,0 +1,100 @@
+.Header {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.navCon {
+  border: 1px solid orange;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navCon .logo {
+  width: 100px;
+}
+.logo img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.navCon .categoryCon {
+  display: flex;
+  gap: 2rem;
+}
+
+.categoryCon p {
+  cursor: pointer;
+  color: #6a6a6a;
+}
+.categoryCon p:hover {
+  color: #222222;
+}
+
+.navCon .etcHeaderNavCon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.etcHeaderNavCon > p {
+  font-size: 14px;
+  cursor: default;
+}
+.etcHeaderNavCon button {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border: 0.5px solid #dddddd;
+  border-radius: 2rem;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.etcHeaderNavCon button:hover {
+  box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.searchCon {
+  border: 1px solid blue;
+  border-radius: 2rem;
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchCon > * {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 0 2rem;
+  flex: 2 1 1 2;
+}
+.searchCon label,
+.searchCon p:nth-of-type(1) {
+  font-size: 12px;
+  color: #222222;
+}
+.searchCon input::placeholder,
+.searchCon p:nth-of-type(2) {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+
+.searchCon input {
+  border: none;
+  outline: none;
+}
+.searchSection1,
+.searchSection2,
+.searchSection3 {
+  border-right: 1px solid #6a6a6a;
+}
