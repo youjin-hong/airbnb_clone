@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import style from '../_styles/searchCon.module.css';
-import DestinationSearchMenu from './DestinationSearchMenu';
+import style from '../../../_styles/searchCon.module.css';
 
-export default function DormitorySearchCon() {
+export default function ActivitySearchCon() {
+  // TODO: Hook으로 뺴보기
   const [selectedMenu, setSelectedMenu] = useState('');
 
   const handleMenuClick = (menuName: string) => {
@@ -31,30 +31,18 @@ export default function DormitorySearchCon() {
         </div>
         <div
           className={style.searchSection2}
-          onClick={() => handleMenuClick('checkin')}
+          onClick={() => handleMenuClick('weather')}
           style={{
             backgroundColor:
-              selectedMenu === 'checkin' ? 'var(--border-gray)' : '',
-            borderRadius: selectedMenu === 'checkin' ? '2rem' : '',
+              selectedMenu === 'weather' ? 'var(--border-gray)' : '',
+            borderRadius: selectedMenu === 'weather' ? '2rem' : '',
           }}
         >
-          <p className={style.searchNavTitle}>체크인</p>
+          <p className={style.searchNavTitle}>날짜</p>
           <p>날짜 추가</p>
         </div>
         <div
           className={style.searchSection3}
-          onClick={() => handleMenuClick('checkout')}
-          style={{
-            backgroundColor:
-              selectedMenu === 'checkout' ? 'var(--border-gray)' : '',
-            borderRadius: selectedMenu === 'checkout' ? '2rem' : '',
-          }}
-        >
-          <p className={style.searchNavTitle}>체크아웃</p>
-          <p>날짜 추가</p>
-        </div>
-        <div
-          className={style.searchSection4}
           onClick={() => handleMenuClick('guest')}
           style={{
             backgroundColor:
@@ -69,7 +57,6 @@ export default function DormitorySearchCon() {
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
       </div>
-      {selectedMenu === 'destination' && <DestinationSearchMenu />}
     </>
   );
 }

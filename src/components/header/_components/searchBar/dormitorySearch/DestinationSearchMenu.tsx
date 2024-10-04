@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from '../_styles/destinationSearchMenu.module.css';
+import style from '../../../_styles/destinationSearchMenu.module.css';
 
 type Country = {
   name: string;

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import style from '../_styles/navCon.module.css';
+import style from '../../_styles/navCon.module.css';
 import { useEffect, useState } from 'react';
 import UserSettingMenu from './UserSettingMenu';
 import GlobalSettingMenu from './GlobalSettingMenu';
-import logo from '../../../assets/images/logo.png';
+import logo from '../../../../assets/images/logo.png';
 
 interface NavConProps {
   selectCategory: string;

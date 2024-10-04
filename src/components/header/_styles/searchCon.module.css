@@ -23,8 +23,7 @@
 .searchCon .searchSection1:hover,
 .searchCon .searchSection2:hover,
 .searchCon .searchSection3:hover,
-.searchCon .searchSection4:hover,
-.searchCon .searchBtn:hover {
+.searchCon .searchSection4:hover {
   background-color: var(--border-gray);
   border-radius: 2rem;
   border: none;
